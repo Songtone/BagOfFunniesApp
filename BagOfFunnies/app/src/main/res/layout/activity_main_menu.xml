@@ -1,18 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bbffff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context="com.example.songt.bagoffunnies.MainMenu">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME TO BAG OF FUNNIES"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/titleView" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/clickView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="CLICK A BUTTON TO GENERATE ONE RANDOMLY"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/jokeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/riddleButton"
+        android:layout_alignStart="@+id/riddleButton"
+        android:layout_below="@+id/clickView"
+        android:layout_marginTop="25dp"
+        android:text="Jokes" />
+
+    <Button
+        android:id="@+id/riddleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jokeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Riddles" />
+
+    <Button
+        android:id="@+id/knockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/riddleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Knock Knock" />
+
+    <Button
+        android:id="@+id/dadJokeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/knockButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Dad Jokes" />
+
+    <Button
+        android:id="@+id/punButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/riddleButton"
+        android:layout_alignStart="@+id/riddleButton"
+        android:layout_below="@+id/dadJokeButton"
+        android:layout_marginTop="25dp"
+        android:text="Puns" />
+
+    <Button
+        android:id="@+id/nsfwButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/punButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="NSFW JOKES" />
+</RelativeLayout>
