@@ -92,4 +92,16 @@ public class RiddleLibrary {
             "A barber","The Match","An onion","Age","Water"
 
     };
+    public String getRiddle(int a){
+        String riddle = mRiddles[a];
+        return riddle;
+    }
+    public String getRiddleAnswer(int a){
+        String riddleAnswer = mRiddleAnswers[a];
+        return riddleAnswer;
+    }
+    public int getRiddleLibraryLength(){
+        int riddleLibraryLength = mRiddles.length;
+        return riddleLibraryLength;
+    }
 }

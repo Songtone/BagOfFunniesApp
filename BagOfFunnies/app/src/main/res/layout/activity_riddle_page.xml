@@ -62,13 +62,14 @@
         android:layout_toLeftOf="@+id/showRiddleButton"
         android:layout_toStartOf="@+id/showRiddleButton"
         android:text="Main Menu"
-        android:id="@+id/button" />
+        android:id="@+id/riddleMainMenuButton" />
 
     <Button
+        android:id="@+id/newRiddleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
+        android:layout_alignBaseline="@+id/riddleMainMenuButton"
+        android:layout_alignBottom="@+id/riddleMainMenuButton"
         android:layout_toEndOf="@+id/showRiddleButton"
         android:layout_toRightOf="@+id/showRiddleButton"
         android:text="New Riddle" />
