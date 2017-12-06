@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_marginTop="36dp"
-        android:text="An old lady forgets her drivers licence at home. She travels down a one way street the wrong way. She does not stop at stop signs, or stop for people crossing the road. A cop is watching her do this and he does not give her a ticket. Why didn't he give her a ticket?"
+        android:layout_centerHorizontal="true"
+        android:text=""
         android:textAlignment="center"
         android:textSize="15dp" />
 
@@ -38,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="54dp"
-        android:text="She was walking"
+        android:text=""
         android:textAlignment="center"
         android:textSize="15dp" />
 

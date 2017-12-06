@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
 
-    private Button mJokeButton,mRiddleButton,mKnockButton,mDadJokeButton,mPunButton;
+    private Button mJokeButton,mRiddleButton,mKnockButton,mDadJokeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainMenu extends AppCompatActivity {
         mRiddleButton = (Button)findViewById(R.id.riddleButton);
         mKnockButton = (Button) findViewById(R.id.knockButton);
         mDadJokeButton = (Button) findViewById(R.id.dadJokeButton);
-        mPunButton = (Button) findViewById(R.id.punButton);
+
 
         mJokeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,15 +44,11 @@ public class MainMenu extends AppCompatActivity {
         mDadJokeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent dadJokeIntent = new Intent(MainMenu.this,DadJokePage.class);
+                startActivity(dadJokeIntent);
             }
         });
-        mPunButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
     }
 //    public void onClick(View v){
 //        if(v.getId() == R.id.jokeButton){

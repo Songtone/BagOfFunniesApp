@@ -1,12 +1,16 @@
 package com.example.songt.bagoffunnies;
 
+import java.util.Random;
+
 /**
  * Created by songt on 2017-12-06.
  */
 
 public class DadJokeLibrary {
 
-    private String dadJokeLibrary[] = {
+    private int randoDadJokeNumber;
+
+    private String mDadJoke[] = {
             "Why don't crabs give to charity?",
             "I got hit in the head with a can of Diet Coke today. Don't worry, I'm not hurt. It was a soft drink",
             "I don't trust stairs. They're always up to something.",
@@ -57,7 +61,7 @@ public class DadJokeLibrary {
             "A Sandwich walks into a bar, the bartender says “Sorry, we don’t serve food here”"
     };
 
-    private String dadJokeAnswers[] = {
+    private String mDadJokeAnswers[] = {
             "Because they're shellfish","","","Because he saw the salad dressing!","He wanted to see the waterfall.","He wanted to see the butterfly.",
             "He wanted to see time fly.","Cell Phones","A little horse","Bison","It was two tired","","Because he was outstanding in his field","Becaause they have no body to go with",
             "I've got my ion you","Sunday school","Nevermind, it's tearable","","It got mugged","All of them","","","","","","You planet","","Ground beef","It's sweeping the nation",
@@ -65,4 +69,21 @@ public class DadJokeLibrary {
             "Because it was well armed","Because if they fell forwards they’d still be in the boat.","","",""
 
     };
+    public String getDadJoke(int a){
+        String dadJoke = mDadJoke[a];
+        return dadJoke;
+    }
+    public String getDadJokeAnswer(int a){
+        String dadJokeAnswer = mDadJokeAnswers[a];
+        return dadJokeAnswer;
+    }
+    public int getDadJokeLibraryLength(){
+        int dadJokeLibraryLength = mDadJoke.length;
+        return dadJokeLibraryLength;
+    }
+    public int getRandomDadJokeNumber(){
+        Random r = new Random();
+        randoDadJokeNumber = r.nextInt(getDadJokeLibraryLength()-1)+1;
+        return randoDadJokeNumber;
+    }
 }

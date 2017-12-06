@@ -13,7 +13,7 @@ public class RiddlePage extends AppCompatActivity {
 
     private RiddleLibrary mRiddleLibrary = new RiddleLibrary();
 
-    private Button mShowRiddleAnswerButton,mMainMenuButton,mNextRiddleButton;
+    private Button mShowRiddleAnswerButton,mRiddleMainMenuButton,mNextRiddleButton;
 
     private TextView mRiddleView,mRiddleAnswerView;
 
@@ -25,7 +25,7 @@ public class RiddlePage extends AppCompatActivity {
         setContentView(R.layout.activity_riddle_page);
 
         mShowRiddleAnswerButton = (Button) findViewById(R.id.showRiddleButton);
-        mMainMenuButton = (Button) findViewById(R.id.riddleMainMenuButton);
+        mRiddleMainMenuButton = (Button) findViewById(R.id.riddleMainMenuButton);
         mNextRiddleButton = (Button) findViewById(R.id.newRiddleButton);
 
         mRiddleView = (TextView) findViewById(R.id.riddleView);
@@ -34,7 +34,7 @@ public class RiddlePage extends AppCompatActivity {
         updateRiddle();
         mRiddleAnswerView.setText("");
 
-        mMainMenuButton.setOnClickListener(new View.OnClickListener() {
+        mRiddleMainMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent riddleIntent = new Intent(RiddlePage.this,MainMenu.class);
