@@ -13,6 +13,63 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HI"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="RIDDLE"
+        android:textSize="30dp"
+        android:id="@+id/textView" />
 
+    <TextView
+        android:id="@+id/riddleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:text="An old lady forgets her drivers licence at home. She travels down a one way street the wrong way. She does not stop at stop signs, or stop for people crossing the road. A cop is watching her do this and he does not give her a ticket. Why didn't he give her a ticket?"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/riddleAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/riddleView"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="She was walking" />
+
+    <Button
+        android:id="@+id/showRiddleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/riddleAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Show Answer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/showRiddleButton"
+        android:layout_toStartOf="@+id/showRiddleButton"
+        android:text="Main Menu"
+        android:id="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toEndOf="@+id/showRiddleButton"
+        android:layout_toRightOf="@+id/showRiddleButton"
+        android:text="New Riddle" />
 </RelativeLayout>
