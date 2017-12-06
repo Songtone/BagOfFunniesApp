@@ -48,14 +48,21 @@ public class DadJokeLibrary {
             "This graveyard looks overcrowded. People must be dying to get in there.",
             "I don’t play soccer because I enjoy the sport. I’m just doing it for kicks.",
             "I keep trying to lose weight, but it keeps finding me.",
-            "What did the ocean say to the shore?"
+            "What did the ocean say to the shore?",
+            "Without geometry life is pointless.",
+            "Why did the octopus beat the shark in a fight?",
+            "Why do scuba divers fall backwards into the water?",
+            "I went to the zoo the other day, there was only one dog in it. It was a shitzu.",
+            "I’m reading a book on the history of glue – can’t put it down.",
+            "A Sandwich walks into a bar, the bartender says “Sorry, we don’t serve food here”"
     };
 
     private String dadJokeAnswers[] = {
             "Because they're shellfish","","","Because he saw the salad dressing!","He wanted to see the waterfall.","He wanted to see the butterfly.",
             "He wanted to see time fly.","Cell Phones","A little horse","Bison","It was two tired","","Because he was outstanding in his field","Becaause they have no body to go with",
             "I've got my ion you","Sunday school","Nevermind, it's tearable","","It got mugged","All of them","","","","","","You planet","","Ground beef","It's sweeping the nation",
-            "To go with the traffic jam!","A walk","Cliff","No I got them all cut","Carlos","","","A stick","Great food, no atmosphere","","","","Nothing, it just waved."
+            "To go with the traffic jam!","A walk","Cliff","No I got them all cut","Carlos","","","A stick","Great food, no atmosphere","","","","Nothing, it just waved.","",
+            "Because it was well armed","Because if they fell forwards they’d still be in the boat.","","",""
 
     };
 }
