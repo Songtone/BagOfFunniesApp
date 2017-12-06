@@ -16,12 +16,12 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="RIDDLE"
+        android:text="DAD JOKE"
         android:textSize="30dp"
         android:id="@+id/textView" />
 
     <TextView
-        android:id="@+id/riddleView"
+        android:id="@+id/dadJokeView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
@@ -31,10 +31,10 @@
         android:textSize="15dp" />
 
     <TextView
-        android:id="@+id/riddleAnswerView"
+        android:id="@+id/dadJokeAnswerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/showRiddleButton"
+        android:layout_above="@+id/showDadJokeButton"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="54dp"
@@ -43,35 +43,32 @@
         android:textSize="15dp" />
 
     <Button
-        android:id="@+id/showRiddleButton"
+        android:id="@+id/showDadJokeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/newRiddleButton"
-        android:layout_alignBottom="@+id/newRiddleButton"
+        android:layout_alignBaseline="@+id/newDadJokeButton"
+        android:layout_alignBottom="@+id/newDadJokeButton"
         android:layout_centerHorizontal="true"
         android:text="Show Answer" />
 
     <Button
-        android:id="@+id/riddleMainMenuButton"
+        android:id="@+id/dadJokeMainMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="71dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
-        android:layout_toLeftOf="@+id/showRiddleButton"
-        android:layout_toStartOf="@+id/showRiddleButton"
+        android:layout_toLeftOf="@+id/showDadJokeButton"
+        android:layout_toStartOf="@+id/showDadJokeButton"
         android:text="Main Menu" />
 
     <Button
-        android:id="@+id/newRiddleButton"
+        android:id="@+id/newDadJokeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/riddleMainMenuButton"
-        android:layout_alignBottom="@+id/riddleMainMenuButton"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_toEndOf="@+id/showRiddleButton"
-        android:layout_toRightOf="@+id/showRiddleButton"
-        android:text="New Riddle" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dadJokeMainMenuButton"
+        android:text="New Dad Joke" />
 </RelativeLayout>

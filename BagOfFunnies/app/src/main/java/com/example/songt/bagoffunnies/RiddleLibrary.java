@@ -1,10 +1,13 @@
 package com.example.songt.bagoffunnies;
 
+import java.util.Random;
+
 /**
  * Created by songt on 2017-12-05.
  */
 
 public class RiddleLibrary {
+    int randoRiddleNumber;
 
     private String mRiddles [] = {
             "The faster you run, the harder I am to catch.",
@@ -104,4 +107,9 @@ public class RiddleLibrary {
         int riddleLibraryLength = mRiddles.length;
         return riddleLibraryLength;
     }
+   public int getRandomRiddleNumber(){
+       Random r = new Random();
+       randoRiddleNumber = r.nextInt(getRiddleLibraryLength()-1)+1;
+       return randoRiddleNumber;
+   }
 }
