@@ -1,7 +1,9 @@
 package com.example.songt.bagoffunnies;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
@@ -19,6 +21,46 @@ public class MainMenu extends AppCompatActivity {
         mDadJokeButton = (Button) findViewById(R.id.dadJokeButton);
         mPunButton = (Button) findViewById(R.id.punButton);
 
+        mJokeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
+
+        mRiddleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent riddleIntent = new Intent(MainMenu.this,RiddlePage.class);
+                startActivity(riddleIntent);
+            }
+        });
+        mKnockButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        mDadJokeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        mPunButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
+//    public void onClick(View v){
+//        if(v.getId() == R.id.jokeButton){
+//
+//        }
+//        else if(v.getId() == R.id.riddleButton){
+//            Intent riddleIntent = new Intent(MainMenu.this,RiddlePage.class);
+//            startActivity(riddleIntent);
+//        }
+//    }
 }
