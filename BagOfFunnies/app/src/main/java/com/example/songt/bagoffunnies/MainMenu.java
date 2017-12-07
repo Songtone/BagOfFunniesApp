@@ -8,25 +8,18 @@ import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
 
-    private Button mJokeButton,mRiddleButton,mKnockButton,mDadJokeButton;
+    private Button mRiddleButton,mKnockButton,mDadJokeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        mJokeButton = (Button) findViewById(R.id.jokeButton);
         mRiddleButton = (Button)findViewById(R.id.riddleButton);
         mKnockButton = (Button) findViewById(R.id.knockButton);
         mDadJokeButton = (Button) findViewById(R.id.dadJokeButton);
 
-
-        mJokeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        
 
         mRiddleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +31,8 @@ public class MainMenu extends AppCompatActivity {
         mKnockButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent knockIntent = new Intent(MainMenu.this, KnockKnockJoke.class);
+                startActivity(knockIntent);
             }
         });
         mDadJokeButton.setOnClickListener(new View.OnClickListener() {

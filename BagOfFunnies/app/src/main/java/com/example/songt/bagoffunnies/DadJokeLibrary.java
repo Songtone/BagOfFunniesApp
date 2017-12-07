@@ -58,7 +58,9 @@ public class DadJokeLibrary {
             "Why do scuba divers fall backwards into the water?",
             "I went to the zoo the other day, there was only one dog in it. It was a shitzu.",
             "I’m reading a book on the history of glue – can’t put it down.",
-            "A Sandwich walks into a bar, the bartender says “Sorry, we don’t serve food here”"
+            "A Sandwich walks into a bar, the bartender says “Sorry, we don’t serve food here”",
+            "Can a kangaroo jump higher than a house?",
+            "My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away."
     };
 
     private String mDadJokeAnswers[] = {
@@ -66,8 +68,7 @@ public class DadJokeLibrary {
             "He wanted to see time fly.","Cell Phones","A little horse","Bison","It was two tired","","Because he was outstanding in his field","Becaause they have no body to go with",
             "I've got my ion you","Sunday school","Nevermind, it's tearable","","It got mugged","All of them","","","","","","You planet","","Ground beef","It's sweeping the nation",
             "To go with the traffic jam!","A walk","Cliff","No I got them all cut","Carlos","","","A stick","Great food, no atmosphere","","","","Nothing, it just waved.","",
-            "Because it was well armed","Because if they fell forwards they’d still be in the boat.","","",""
-
+            "Because it was well armed","Because if they fell forwards they’d still be in the boat.","","","","Of course, a house doesn’t jump at all.",""
     };
     public String getDadJoke(int a){
         String dadJoke = mDadJoke[a];

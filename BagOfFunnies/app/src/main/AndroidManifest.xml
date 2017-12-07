@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RiddlePage" />
-        <activity android:name=".DadJokePage"></activity>
+        <activity android:name=".DadJokePage" />
+        <activity android:name=".KnockKnockJoke"></activity>
     </application>
 
 </manifest>
