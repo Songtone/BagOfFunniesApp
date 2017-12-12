@@ -109,7 +109,7 @@ public class RiddleLibrary {
     }
    public int getRandomRiddleNumber(){
        Random r = new Random();
-       randoRiddleNumber = r.nextInt(getRiddleLibraryLength()-1)+1;
+       randoRiddleNumber = r.nextInt(getRiddleLibraryLength());
        return randoRiddleNumber;
    }
 }
