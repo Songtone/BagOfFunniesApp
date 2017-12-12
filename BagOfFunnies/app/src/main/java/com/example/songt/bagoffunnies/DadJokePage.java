@@ -42,8 +42,9 @@ public class DadJokePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mDadJokeNumber++;
-                if(mDadJokeNumber == mDadJokeLibrary.getDadJokeLibraryLength()-1 ){
+                if(mDadJokeNumber == mDadJokeLibrary.getDadJokeLibraryLength()){
                     mDadJokeView.setText("You reached the end!");
+                    mNextDadJokeButton.setVisibility(view.INVISIBLE);
                 }
                 else {
                     updateDadJoke();

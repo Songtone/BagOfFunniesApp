@@ -17,7 +17,7 @@ public class RiddlePage extends AppCompatActivity {
 
     private TextView mRiddleView,mRiddleAnswerView;
 
-    private int mRiddleNumber;
+    private int mRiddleNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,8 @@ public class RiddlePage extends AppCompatActivity {
         mRiddleAnswerView = (TextView)findViewById(R.id.riddleAnswerView);
 
         updateRiddle();
-        mRiddleAnswerView.setText("");
 
+        mRiddleAnswerView.setText("");
         mRiddleMainMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,8 +44,15 @@ public class RiddlePage extends AppCompatActivity {
         mNextRiddleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateRiddle();
-                mRiddleAnswerView.setText("");
+                mRiddleNumber++;
+                if(mRiddleNumber == mRiddleLibrary.getRiddleLibraryLength()) {
+                    mRiddleView.setText("This is the end!");
+                    mNextRiddleButton.setVisibility(view.INVISIBLE);
+                }
+                else {
+                    updateRiddle();
+                    mRiddleAnswerView.setText("");
+                }
             }
         });
         mShowRiddleAnswerButton.setOnClickListener(new View.OnClickListener() {
@@ -57,8 +64,6 @@ public class RiddlePage extends AppCompatActivity {
 
     }
     public void updateRiddle(){
-
-        mRiddleNumber = mRiddleLibrary.getRandomRiddleNumber();
         mRiddleView.setText(mRiddleLibrary.getRiddle(mRiddleNumber));
 
 

@@ -107,9 +107,5 @@ public class RiddleLibrary {
         int riddleLibraryLength = mRiddles.length;
         return riddleLibraryLength;
     }
-   public int getRandomRiddleNumber(){
-       Random r = new Random();
-       randoRiddleNumber = r.nextInt(getRiddleLibraryLength());
-       return randoRiddleNumber;
-   }
+
 }
